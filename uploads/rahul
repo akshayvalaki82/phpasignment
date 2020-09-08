@@ -1,0 +1,45 @@
+	      $sno = $sno + 1;  
+              $pn=$row[pname];
+              $fs=$row[file];
+              $pp=$row[pprice];
+              $sc=$row[scategory];
+              $id=$row[id];
+
+
+	CRUD
+		top right => add new create_product.php
+	Display => List page 	
+
+	create => submit => .php
+	file select => submit => upload.php $file = $_FILES => print_r(file);
+
+	list => get id => 1 =>
+ select * from produploaduct where id = 1 =>
+ result form =>submit edit_code.php => $_files => pr
+	
+
+
+
+1 Samsung Image 200 <form action="edit_product.php" method="POST">
+				<input type="hiddden" name="id" value="1" />
+				<input type="hiddden" name="name" value="1" />
+				<input type="hiddden" name="image_path" value="1" />
+				<input type="hiddden" name="price" value="1" />
+				<button type="submit">Edit</button>
+				</form>
+
+
+
+ 	1 Samsung Image 2000 <a href="edit_product.php?id=1"> Edit  </a>| Delete
+
+	edit_product.php
+
+	$id = $_GET['id'];
+	$sql = "select * from products where id = $id";
+	$result = query_fetch($sql);
+	
+	<input name="product_name" value="$result['product_name'] />
+	Create 
+	Read 
+	Update 
+	Delete
